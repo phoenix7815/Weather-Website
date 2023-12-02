@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="alert alert-danger showerror error" role="alert">
+    Enter Valid City Name!!
+  </div>
+    <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalTour">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-4 shadow">
+            <div class="modal-body p-5">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control mericity" spellcheck="false" placeholder="Enter City Name" aria-label="Enter City Name" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary tim" type="button" id="button-addon2">Search</button>
+              </div>
+              <div class="show showme">
+              <div>
+                <img src="./animated/day.svg" width="250" height="250" class="rounded mx-auto d-block pic">
+              </div>
+              <h2 class="fw mb-1 temp" style="text-align: center; color: #555555; opacity: 0.8;">17°C</h2>
+              <h2 class="fw mb-0 city" style="text-align: center; color: #555555; opacity: 0.8;">Jind</h2>
+            </div>
+              <div class="container mt-1 show showme">
+                <div class="row">
+                  <div class="col-md-6 text-center">
+                    <img src="./static/wind-speed.svg" width="50" height="50">
+                    <h5 class="wind">Wind: 2 km/h</h5>
+                  </div>
+                  <div class="col-md-6 text-center show showme">
+                    <img src="./animated/humidity-svgrepo-com.svg" width="50" height="50">
+                    <h5 class="humidity">Humidity: 97%</h5>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      </div>
+</body>
+<script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
